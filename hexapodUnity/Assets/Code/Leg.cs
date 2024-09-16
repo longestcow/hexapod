@@ -7,7 +7,7 @@ using UnityEngine;
 public class Leg : MonoBehaviour
 {
     public bool editMode;
-    public GameObject target, pivot1, pivot2, pivot3, leg1, leg2;
+    public GameObject target, pivot1, pivot2, pivot3;
     float legLength1, legLength2; 
     public float baseOffset;
 
@@ -23,7 +23,7 @@ public class Leg : MonoBehaviour
     void moveToPos()
     {
         Vector3 pos = target.transform.localPosition; 
-        legLength1 = leg1.transform.lossyScale.x; legLength2 = leg2.transform.lossyScale.x;
+        legLength1 = 2; legLength2 = 2;
 
         float j1 = Mathf.Atan2(-pos.z, pos.x) * Mathf.Rad2Deg + baseOffset; // base angle
         Vector3 angle1 = pivot1.transform.eulerAngles; angle1.y=j1;

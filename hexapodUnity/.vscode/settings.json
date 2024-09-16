@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "hexapod.sln"
+    "dotnet.defaultSolution": "hexapodUnity.sln"
 }

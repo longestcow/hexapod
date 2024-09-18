@@ -23,7 +23,7 @@ public class Leg : MonoBehaviour
     void moveToPos()
     {
         Vector3 pos = target.transform.localPosition; 
-        legLength1 = 2; legLength2 = 2;
+        legLength1 = 2; legLength2 = 5;
 
         float j1 = Mathf.Atan2(-pos.z, pos.x) * Mathf.Rad2Deg + baseOffset; // base angle
         Vector3 angle1 = pivot1.transform.eulerAngles; angle1.y=j1;

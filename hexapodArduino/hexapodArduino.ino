@@ -17,12 +17,8 @@ int potX, potY, potZ;
 
 void setup() {
   int i = 9;
-  for(Leg leg : legs){ // change when servo controller
-    leg.coxaJoint.attach(i++, 500, 2500);
-    leg.femurJoint.attach(i++, 500, 2500);
-    leg.tibiaJoint.attach(i++, 500, 2500);
-    leg.targetPos = Vector3();
-    leg.forward=true;
+  for(int i = 0; i<3; i++){
+    
   }
   
   Serial.begin(9600);
@@ -30,14 +26,14 @@ void setup() {
 }
 
 void loop() {
-  delay(50);
-  potX = map(analogRead(A0), 0, 1023, -150, 150); potY = map(analogRead(A4), 0, 1023, 0, 200); potZ = map(analogRead(A2), 0, 1023, -200, 200);
-//  Serial.println(potX); Serial.println(potY); Serial.println(potZ); Serial.println("--------------");
-//  legs[0].coxaJoint.writeMicroseconds(potX);
-//  legs[0].femurJoint.writeMicroseconds(potY);
-//  legs[0].tibiaJoint.writeMicroseconds(potZ);
-  currentPos.x=potX;currentPos.y=potY;currentPos.z=potZ;
-  moveToPos(currentPos);
+//  delay(50);
+//  potX = map(analogRead(A0), 0, 1023, -150, 150); potY = map(analogRead(A4), 0, 1023, 0, 200); potZ = map(analogRead(A2), 0, 1023, -200, 200);
+////  Serial.println(potX); Serial.println(potY); Serial.println(potZ); Serial.println("--------------");
+////  legs[0].coxaJoint.writeMicroseconds(potX);
+////  legs[0].femurJoint.writeMicroseconds(potY);
+////  legs[0].tibiaJoint.writeMicroseconds(potZ);
+//  currentPos.x=potX;currentPos.y=potY;currentPos.z=potZ;
+//  moveToPos(currentPos);
   
 
 }

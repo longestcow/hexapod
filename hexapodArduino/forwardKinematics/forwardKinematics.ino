@@ -17,13 +17,13 @@ void moveLeg(int i, bool lLeg = false);
 
 Leg legs[6];
 int stateCount = 9, state=0;
-int timeMs = 30;
+int timeMs = 50;
 unsigned long timer;
 
 void setup() {
   Serial.begin(9600);
   pwm1.begin();
-  pwm2.begin();
+  pwm2.begin();   
   pwm1.setPWMFreq(50);  
   pwm2.setPWMFreq(50);  
 
@@ -52,8 +52,8 @@ void setup() {
   fillLegValues();
   timer=millis()+timeMs;
 
-
-
+  delay(100);
+  
 }
 
 
@@ -65,10 +65,10 @@ void loop() {
 //  moveLeg(3);
 //  moveLeg(5, true);
 
-
+  int a[] = {0,5};
   for(int j = 0; j<stateCount+7; j++){
-    for(int i = 0; i<6; i++){
-      moveLeg(i);
+    for(int i = 0; i<sizeof(a)/sizeof(int); i++){
+      moveLeg(a[i]);
     }
     delay(timeMs);
   }

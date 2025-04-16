@@ -1,7 +1,9 @@
 # hexapod  
 This project is heavily inspired by [Aecert Robotics](https://www.youtube.com/@AecertRobotics).    
 My Hexapod uses 18 MG996R Servos, 3 for each of the 6 legs.      
-
+  Latest Update:  
+  ![img-2025-04-15-21-24-35](https://github.com/user-attachments/assets/8fed00e0-3306-42f1-b642-271da800b991)  
+  
 https://github.com/user-attachments/assets/71469305-5b4b-47e6-905a-ad87a0b493c0    
     
 Ohter components I'm using are - 2S LiPO Battery, 2xPCA9685, DC Voltage Buck Converter  

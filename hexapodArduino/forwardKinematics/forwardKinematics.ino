@@ -65,9 +65,10 @@ void loop() {
 //  moveLeg(3);
 //  moveLeg(5, true);
 
-  int a[] = {0,5};
+  int a[] = {0,1,2,3,4,5};
   for(int j = 0; j<stateCount+7; j++){
     for(int i = 0; i<sizeof(a)/sizeof(int); i++){
+      Serial.println(a[i]);
       moveLeg(a[i]);
     }
     delay(timeMs);

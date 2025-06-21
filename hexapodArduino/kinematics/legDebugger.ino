@@ -1,7 +1,6 @@
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h>
 #include <Adafruit_GFX.h>
-#include <Fonts/FreeSerif18pt7b.h>
 #include <Adafruit_ST7789.h>
 #include <SPI.h>
 
@@ -152,5 +151,4 @@ void moveLeg(String text) {
     Serial.print(y); Serial.print(", ");
     Serial.println(z);
   }
-
 }

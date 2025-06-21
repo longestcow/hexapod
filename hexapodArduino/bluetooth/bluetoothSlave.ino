@@ -19,6 +19,7 @@ char c = ' ';
  
 void setup() 
 {
+
     Serial.begin(9600);
     BTserial.begin(9600);  
     
@@ -56,5 +57,6 @@ void loop()
         BTserial.write(c); 
          
     }
+    
  
 }
